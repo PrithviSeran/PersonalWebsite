@@ -686,6 +686,7 @@ main #about p .cover {
     .project{
         display: block;
         overflow: hidden;
+        min-height: 750px;
         
     }
 
