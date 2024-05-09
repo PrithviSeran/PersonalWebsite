@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet"> 
+    <link rel="icon" sizes="16x16" href="images/favicon-16x16.png" type="image/png">
+    <title>Prithvi Seran</title>
+</head>
+<body>
+
+    <div id="app" class="dark">
+        <nav id="navbar">
+            <div id="nav-left">
+                <a class="logo"></a>
+            </div>
+            <div id="nav-right">
+                <span class="link">
+                    <a href="#aboutme">About Me</a>
+                </span>
+                <span class="link">
+                    <a href="#projects">Projects</a>
+                </span>
+                <span class="link">
+                    <a href="#contact">Contact Me</a>
+                </span>
+                <span class="link">
+                    <a href="images/myresume.pdf">CV</a>
+                </span>
+            </div>
+
+        </nav>
+        <img src="images/layered-waves-haikei.png" alt="alternatetext" style="position: absolute; height: 6550px; width: 50%;">
+        <header id="header">
+            <div id="header_left">
+                <h1>This is Prithvi Seran,</h1>
+                <p>
+                    a well-rounded software and deep learning engineer curious to learn more about STEM, finance, and research.
+
+                </p>
+            
+            
+            </div>
+
+            <div id="header-right">
+                <img id='me-image' src="images/me.png" alt="alternatetext" style="position: relative; height: 600px; border-radius: 100%; top: 60px; border: 8px solid #395992;">
+            </div>
+
+        </header>
+        
+        <!--<div class="spacer layer1"></div>
+        <img src="images/layered-waves-haikei-1.png" alt="alternatetext" style="position: absolute; height: 5200px; width: 50%">-->
+        <main>
+            <h1 id="aboutme" class="head me">Who am I?</h1>
+            <div id="about" class="about">
+                <div class="card one">
+                    <div class="headtitle info"> Undergraduate Student </div>
+                    <p>I am currently a second year student at the University of Toronto studying computer science. Although my degree is 
+                        only in computer science, I am still intriuged by engineering. I actively learn engineering design through the
+                        Univeristy of Toronto Aerospace Team as a data processing member and a firmware develepor. My involement in this design team 
+                        has also accelerated my learning of deep neural networks and embeded software.
+                    </p>
+                </div>
+                <div class="card two">
+                    <div class="headtitle info"> Hobbies </div>
+                    <p>Asside from STEM and school (which take a lot of time), I am exercising. I like to do a lot of cardio by going on runs, and 
+                        also do weight lifting. I am a big fan of combat sports, so I like to do kickboxing/mauy thai in my free time. 
+                    </p>
+                </div>
+                <div class="card three">
+                    <div class="headtitle info"> Things I like </div>
+                    <p>To relax, I watch UFC events with my friends, watch movies with my parents, and listen to music. I believe that taking
+                        some time off just to let your brain rest is key for effeciency in the long run.
+                    </p>
+                </div>
+
+            </div>     
+            <h1 id="projects" class="head ph">My Projects</h1>          
+        </main>
+
+        <div>
+            <section class="project"> 
+                <h1 class="headtitle project-title"> Prince Financials</h1>
+                <img class="image" src="images/forex-image.jpeg" alt="alternatetext">
+                <h1 class="scroll-project reveal-type">Prince Financials' Trading Bot is an open-source Forex trading bot that 
+                    uses multiple indicators to make trades. Prince Trading Bot utilizes Oanda's 
+                    trading API to place trades (currently it uses the practice simulation API, so 
+                    real money is not used) and runs on the Google Cloud Platform.
+                </h1>
+                <a href="https://github.com/PrithviSeran/Prince-Financials-Trading-Bot" class="scroll-project project-button"> 
+                    <h1>Visit Project</h1>
+                </a>
+                <div class="button-shadow"></div>
+            </section>
+
+            <section class="project"> 
+                <h1 class="headtitle project-title"> EZSpeech</h1>
+                <img class="image" src="images/EZSpeech.jpeg" alt="alternatetext">
+                <h1 class="scroll-project reveal-type">EZSpeech aims to bridge language barriers, fostering stronger communities through 
+                    enhanced communication. By granting individuals the ability to converse in any language, 
+                    it empowers them to contribute to discussions regardless of linguistic differences. 
+                    This inclusivity addresses equity issues, particularly affecting marginalized groups 
+                    who may lack access to educational and economic opportunities. Moreover, EZSpeech 
+                    facilitates the rapid dissemination of information across borders, enhancing global 
+                    connectivity and collaboration.
+                </h1>
+                <a href="https://github.com/PrithviSeran/EZSpeech" class="scroll-project project-button"> 
+                    <h1>Visit Project</h1>
+                </a>
+                <div class="button-shadow"></div>
+
+            </section>
+
+            <section class="project"> 
+                <h1 class="headtitle project-title"> YOLOV1 Model</h1>
+                <img class="image" src="images/YOLOV1model.jpg" alt="alternatetext">
+                <h1 class="scroll-project reveal-type">Unlike traditional detection methods that involve multiple passes through an image
+                    pyramid or sliding window approaches, YOLO V1 frames object detection as a single
+                    regression problem. It divides the input image into a grid and predicts bounding boxes
+                    and class probabilities directly from the grid cells, offering remarkable speed and efficiency.
+                    Despite its simplicity, YOLO V1 achieved competitive accuracy while significantly outperforming
+                    existing methods in terms of speed, making it a landmark contribution to the field of deep learning
+                    and computer vision. This repo has implemented this model in TensorFlow.
+                </h1>
+                <a href="https://github.com/PrithviSeran/YOLOV1-From-Scratch"class="scroll-project project-button"> 
+                    <h1>Visit Project</h1>
+                </a>
+                <div class="button-shadow"></div>
+            </section>
+
+            <section class="project"> 
+                <h1 class="headtitle project-title"> CV Model Fine-Tuning</h1>
+                <img class="image" src="images/Fine-Tuning.png" alt="alternatetext">
+                <h1 class="scroll-project reveal-type">This Repo shows you how you can fine-tune an object detection model from TensorFlow's
+                    Object Detection API using only code, and no terminal commands. This repo is only
+                    applicable for datasets with only 1 class (only one object to detect).
+                </h1>
+                <a class="scroll-project project-button" href="https://github.com/PrithviSeran/Transfer-Learning-With-TensorFlow-Object-Detection-API"> 
+                    <h1>Visit Project</h1>
+                </a>
+
+                <div class="button-shadow"></div>
+
+            </section>
+
+            <section class="project"> 
+                <h1 class="headtitle project-title"> Object Detection</h1>
+                <img class="image" src="images/Object Detection.webp" alt="alternatetext">
+                <h1 class="scroll-project reveal-type">This repository uses the TensorFlow Object Detection API's pre-trained models
+                    to draw bounding boxes over 90 different types of objects.
+                </h1>
+                <a href="https://github.com/PrithviSeran/TensorFlow_Object-Detection_API_Implementation" class="scroll-project project-button"> 
+                    <h1>Visit Project</h1>
+                </a>
+                <div class="button-shadow"></div>
+            </section>
+        </div>
+
+    <section id="contact">
+        <h2>Want to get in touch?
+        </h2>
+        <h3>Send me an email at: 
+            <a href="mailto:prithviseran0@gmail.com">prithviseran0@gmail.com</a>
+        </h3>
+        <h3> GitHub 
+            <a href="https://github.com/PrithviSeran">GitHub</a>
+        </h3>
+    </section>
+
+    </div>    
+</body>
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src ="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src ="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+<script src= "https://unpkg.com/split-type"></script>
+<script src="script.js"></script>
+
+</html>
