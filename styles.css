@@ -16,10 +16,6 @@
     --horizontal-padding: 10vw;
 }
 
-html{
-    min-width: 1000px;
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -63,12 +59,6 @@ a {
 #app p {
     font-weight: 300;
     line-height: 1.5;
-}
-
-@media (max-width: 600px) {
-    #app {
-        --horizontal-padding: 7.5vw;
-    }
 }
 
 @keyframes fade-up {
@@ -213,6 +203,11 @@ a {
 }
 
 #header #header-right #me-image{
+    position: relative; 
+    height: 600px; 
+    border-radius: 100%; 
+    top: 60px; 
+    border: 8px solid #395992;
     animation-name: fade-up;
     animation-duration: 1s;
     animation-delay: 1s;
@@ -340,21 +335,9 @@ a {
     pointer-events:none
 }
 
-.circle{
-    height: 40px;
-    width: 40px;
-    border-radius: 40px;
-    background-color: red;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-}
 
 main {
     padding: 0 var(--horizontal-padding) 2rem;
-    /*display: flex;
-    flex-direction: column;*/
     justify-content: center;
     gap:3rem
 }
@@ -366,12 +349,9 @@ main #about {
     /*grid-auto-rows: minmax(150px, auto);*/
     grid-template-rows: repeat(2, 25vh);
     gap:1.5rem;
+    position: relative;
+    justify-content: space-between;
     
-    /*
-    position: relative;
-    width: 75%;
-    position: relative;
-    left: -400px;*/
 }
 
 .card.two{
@@ -400,6 +380,14 @@ main #about {
     }
 }
 
+.card.one{
+    min-height: 400px;
+}
+.card.two{
+    min-height: 200px;
+}.card.three{
+    min-height: 200px;
+}
 
 main #about .card {
     display: grid;
@@ -411,10 +399,8 @@ main #about .card {
     text-decoration: none;
     overflow: hidden;
     
-    /*position: relative;
-    isolation: isolate;
-    transition:transform .4s ease*/
 }
+
 
 .card.one::before {
     content: '';
@@ -470,18 +456,6 @@ main #about .card {
     opacity: 1;
 }
 
-/*
-@media (min-width: 550px) {
-    main #about .card:nth-of-type(1) {
-        grid-column: span 2;
-        grid-row:span 2
-    }
-
-    main #about .card:nth-of-type(2) {
-        grid-column:span 2
-    }
-}
-*/
 
 .card.one{
     
@@ -501,93 +475,6 @@ main #about .card {
     left: 400px;
     
 }
-
-/*
-main #about {
-    border: 1px solid var(--accent-color);
-    border-radius: var(--border-radius);
-    padding: 5vmax;
-    background:var(--card-background);
-    position: relative;
-    left: -800px;
-}
-
-main #about h2 {
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: .4em;
-    width: 50px;
-}
-
-@media (max-width: 1200px) {
-    main #about h2 {
-        font-size:1rem
-    }
-}
-
-main #about h2:hover {
-    animation:shake 1s 1 ease
-}
-
-@keyframes shake {
-    0% {
-        transform:scale(1) rotate(0)
-    }
-
-    20% {
-        transform:scale(.95) rotate(0)
-    }
-
-    40% {
-        transform:scale(.95) rotate(10deg)
-    }
-
-    60% {
-        transform:scale(.95) rotate(-10deg)
-    }
-
-    80% {
-        transform:scale(.95) rotate(0)
-    }
-
-    to {
-        transform:scale(1) rotate(0)
-    }
-}
-
-main #about p {
-    font-size: 4.5vw;
-    color: var(--title);
-    font-weight: 500;
-    line-height: 1.1;
-    position: relative;
-    isolation: isolate;
-    word-break:break-word
-}
-
-@media (max-width: 1200px) {
-    main #about p {
-        font-size:3rem
-    }
-}
-
-@media (max-width: 700px) {
-    main #about p {
-        font-size:2rem
-    }
-}
-
-main #about p .main {
-    position: absolute;
-    z-index:-1
-}
-
-main #about p .cover {
-    color: transparent;
-    background: linear-gradient(90deg, var(--card-background) 0%, var(--card-background) 50%, transparent 50%, transparent 100%);
-    background-size:200% 100%
-}
-*/
 
 .one{
     text-decoration: none;
@@ -667,6 +554,62 @@ main #about p .cover {
     overflow-y: scroll;
 }
 
+@media (max-width: 600px) {
+    #app {
+        --horizontal-padding: 7.5vw;
+    }
+
+    main #about {
+        display: block;
+    }
+    .card{
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+    }
+
+    .project{
+        display: block;
+        overflow: hidden;
+        
+    }
+
+    .reveal-type{
+        font-size: 1em;
+        overflow: hidden;
+    }
+
+    .project-button{
+        background-image: linear-gradient(to right bottom, #00b1ff, #2f92db, #3975b6, #395992, #323f6f);
+        background-size:300%;
+        background-position: 0 0;
+        appearance: none !important;
+        gap: 1em;
+        font-size: 1em;
+        top: 50px;
+        position: relative;
+        margin-top: 2em;
+        left: 30%;
+
+        z-index: 0;
+        transition: all ease 0.5s;
+        
+       
+    }
+
+    #header{
+        display: block;
+    }
+
+    #header #header-right #me-image{
+        position: relative;
+        width: 250px;
+        height: auto;
+        left: 25%;
+
+    }
+}
+
 .project-title{
     text-align: center;
     grid-column: span 2;
@@ -680,17 +623,6 @@ main #about p .cover {
     transition: all 1s;
 }
 
-/*
-main #projects {
-    display: grid;
-    grid-template-columns:repeat(2, 1fr);
-    grid-template-rows: repeat(3, 25vh);
-    flex-direction: column;
-    gap:1.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-}
-*/
 .one.one{
     grid-column: span 1;
 }
@@ -738,15 +670,6 @@ main #about p{
     text-decoration: none;
   }
 
-  /*
-.test{
-    background-image: url('layered-waves-haikei.svg');
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-*/
 .head.me{
     margin-top: 10%;
 }
@@ -765,36 +688,13 @@ main #about p{
     margin-top: 5%;
     margin-bottom: 5%;
     font-size: 3rem;
+    z-index: 100;
 }
 
 .show{
     opacity: 1;
 }
 
-.tilt-box{
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 100%;
-    transition: all 0.6s ease-out;
-    transform: rotateX(0deg) rotateY(0deg);
-    perspective: 1000px;
-    transform: preserve-3d;
-
-}
-
-.tilt-box-wrap{
-    position: relative;
-    transition: all 0.6s ease-out;
-    perspective: 1000px;
-}
-
-.t_over{
-    width: 33.3333%;
-    height: 33.3333%;
-    position: absolute;
-    z-index: 1;
-}
 
 .t_over:nth-child(1){ left: 0; top: 0;}
 .t_over:nth-child(2){ left: 33.3333%; top: 0;}
@@ -840,37 +740,8 @@ main #projects .one  .title h2 span {
 }
 
 
-.overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    /*width: 36%;
-    overflow: hidden;
-    white-space: nowrap;
-    word-wrap: break-word;*/
-    display: flex;
-    color: var(--title);
-    font-weight: 600;
-    transition:font-size .4s ease;
-    opacity: 0;
-    padding: 2.5em;
-    align-items: center;
-    transition: opacity 0.5s;
-
-}
 
 
-.one:hover .overlay{
-
-    opacity: 1;
-    background-image: linear-gradient(to left, var(--accent-color-dark) 0%, var(--card-background) 50%);
-    
-    /*transition: opacity 1s;*/
-}
-
-
-/*
 main #projects .one  .content {
     border: 1px solid var(--accent-color-dark);
     border-left: none;
@@ -1081,5 +952,3 @@ body #contact #email-scroller:hover .scroll-group span {
 .spacer{
     height: 100vh;
 }
-
-
