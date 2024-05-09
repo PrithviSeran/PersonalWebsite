@@ -690,6 +690,12 @@ main #about p .cover {
         
     }
 
+    .project.unique{
+        display: block;
+        overflow: hidden;
+        min-height: 1200px;
+    }
+
     .reveal-type{
         font-size: 1em;
         overflow: hidden;
