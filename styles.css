@@ -707,11 +707,11 @@ main #about p .cover {
         background-position: 0 0;
         appearance: none !important;
         gap: 1em;
-        font-size: 0.5em;
+        font-size: 1em;
         top: 50px;
         position: relative;
         margin-top: 2em;
-        left: 30%;
+        left: 15%;
 
         z-index: 0;
         transition: all ease 0.5s;
