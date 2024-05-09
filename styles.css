@@ -711,7 +711,7 @@ main #about p .cover {
         top: 50px;
         position: relative;
         margin-top: 2em;
-        left: 15%;
+        left: 30%;
 
         z-index: 0;
         transition: all ease 0.5s;
@@ -727,7 +727,7 @@ main #about p .cover {
         position: relative;
         width: 250px;
         height: auto;
-        left: 30%;
+        left: 15%;
 
     }
 
