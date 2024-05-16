@@ -213,6 +213,7 @@ a {
     height: 600px; 
     border-radius: 100%; 
     top: 60px; 
+    left: -50%;
     border: 8px solid #395992;
     animation-name: fade-up;
     animation-duration: 1s;
