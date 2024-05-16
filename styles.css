@@ -726,9 +726,9 @@ main #about p .cover {
 
     #header #header-right #me-image{
         position: relative;
-        width: 175px;
+        width: 150px;
         height: auto;
-        left: 12%;
+        left: 30%;
 
     }
 
